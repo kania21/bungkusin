@@ -34,22 +34,26 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" style="background-color: #ffce99">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
+            <div class="thumbnail">
                 <a href="{{url('/bungkus')}}">
                 <img src="{{url('temp/logo6.png')}}" alt="BUNGKUS.IN" href="{{url('/bungkus')}}">
-
+                </div>
                 <div class="collapse navbar-collapse" id="navbarExample">
 
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Welcome! <span class="sr-only">(current)</span></a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Rp 50.000</a>
+                            <a class="nav-link" href="{{url('/topup')}}">Rp 50.000</a>
                         </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -67,6 +71,7 @@
         <h2 id="totalsemua">Total Pembayaran : 0</h2>
 
         <div class="row">
+            <div c
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolramah1_13000.jpg')}}" alt=""></a>
@@ -97,9 +102,21 @@
                     <div class="card-block">
                         <h4 class="card-title" ><a href="#">Gila Aja</a></h4>
                         <h2 data-price='13000' id="price3">Rp . 13.000</h2>
-                        <a class="btn btn-primary kurang total" href="#" data-id="3">-</a>
-                        <input type="text" value="0" class="jumlah text-center" id="jumlah3" disabled>
-                        <a class="btn btn-primary tambah total" href="#" data-id="3">+</a>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a class="btn btn-primary kurang total" href="#" data-id="3">-</a>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" value="0" class="jumlah text-center" id="jumlah3" disabled>
+
+                            </div>
+                            <div class="col-sm-4">
+                                <a class="btn btn-primary tambah total" href="#" data-id="3">+</a>
+                            
+                            </div>
+                            
+                        </div>
+                        
                     </div>
                 </div>
             </div>

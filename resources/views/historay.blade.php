@@ -135,26 +135,28 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" style="background-color: #ffce99">
+     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" style="background-color: #ffce99">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="#">BUNGKUS.IN</a>
+            <div class="thumbnail">
+                <a href="{{url('/bungkus')}}">
+                <img src="{{url('temp/logo6.png')}}" alt="BUNGKUS.IN" href="{{url('/bungkus')}}">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarExample">
 
-            <div class="collapse navbar-collapse" id="navbarExample">
-
-                <!-- <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="signup.php">Sign Up <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li> -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Welcome! <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/topup')}}">Rp 50.000</a>
+                        </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li> -->
                 </ul>

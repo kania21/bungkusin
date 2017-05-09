@@ -54,7 +54,7 @@
                             <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Rp 50.000</a>
+                            <a class="nav-link" href="{{url('topup')}}">Rp 50.000</a>
                         </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>

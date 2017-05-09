@@ -24,3 +24,6 @@ route:: get('/merchant','MerchantController@merchant');
 route:: get('/addmenu','MerchantController@addmenu');
 route:: get('/editmenu','MerchantController@editmenu');
 route:: get('/menumer','MerchantController@merchantmenu');
+route:: get('/topup','UserController@topup');
+route:: get('/transfer','UserController@transfer');
+route:: get('/pulsa','UserController@pulsa');

@@ -34,22 +34,26 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" style="background-color: #ffce99">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
+            <div class="thumbnail">
                 <a href="{{url('/bungkus')}}">
                 <img src="{{url('temp/logo6.png')}}" alt="BUNGKUS.IN" href="{{url('/bungkus')}}">
-
+                </div>
                 <div class="collapse navbar-collapse" id="navbarExample">
 
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Welcome! <span class="sr-only">(current)</span></a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Rp 50.000</a>
+                            <a class="nav-link" href="{{url('/topup')}}">Rp 50.000</a>
                         </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
