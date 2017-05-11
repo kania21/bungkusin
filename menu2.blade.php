@@ -75,10 +75,10 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolramah1_13000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4>Ramah 1</h4>
-                        <h2 data-price='13000' id="price1">Rp . 13.000</h2>
+                        <h2 data-price='13000' id="price1">Rp . 13.000</h2>                        
                         <a class="btn btn-primary kurang total" href="#" data-id="1">-</a>
-                        <input type="text" value="0" name="jumlah[]" class="jumlah text-center" id="jumlah1" disabled>
-                        <a class="btn btn-primary tambah total" href="#" data-id="1">+</a>
+                        <input type="text" value="0" name="jumlah[]" class="jumlah text-center" id="jumlah1" style="width: 150px; height: 30px" disabled>
+                        <a class="btn btn-primary tambah total" href="#" data-id="1">+</a>                        
                     </div>
                 </div>
             </div>
@@ -86,10 +86,10 @@
                 <div class="card">
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolramah2_13000.jpg')}}" alt=""></a>
                     <div class="card-block">
-                        <h4 class="card-title"><a href="#">Ramah 2</a></h4>
+                        <h4>Ramah 2</h4>
                         <h2 data-price='13000' id="price2">Rp . 13.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="2">-</a>
-                        <input type="text" value="0" class="jumlah text-center" id="jumlah2" disabled>
+                        <input type="text" value="0" class="jumlah text-center" id="jumlah2" style="width: 150px; height: 30px" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="2">+</a>
                     </div>
                 </div>
@@ -98,10 +98,10 @@
                 <div class="card">
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolgilaaja_13000.jpg')}}" alt=""></a>
                     <div class="card-block">
-                        <h4 class="card-title" ><a href="#">Gila Aja</a></h4>
+                        <h4>Gila Aja</h4>
                         <h2 data-price='13000' id="price3">Rp . 13.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="3">-</a>                                                 
-                        <input type="text" value="0" class="jumlah text-center" id="jumlah3" disabled>
+                        <input type="text" value="0" class="jumlah text-center" id="jumlah3" style="width: 150px; height: 30px" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="3">+</a>                        
                     </div>
                 </div>
@@ -110,10 +110,10 @@
                 <div class="card">
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolgilabanget_14000.jpg')}}" alt=""></a>
                     <div class="card-block">
-                        <h4 class="card-title"><a href="#">Gila Banget</a></h4>
+                        <h4>Gila Banget</h4>
                         <h2 data-price='14000' id="price4">Rp . 14.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="4">-</a>
-                        <input type="text" value="0" class="jumlah text-center" id="jumlah4" disabled>
+                        <input type="text" value="0" class="jumlah text-center" id="jumlah4" style="width: 150px; height: 30px" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="4">+</a>
                     </div>
                 </div>
