@@ -39,9 +39,7 @@
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" style="background-color: =black">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        
         <div class="container">
 <!--             <a class="navbar-brand" href="index.php">BUNGKUS.IN</a>
  -->
@@ -68,46 +66,72 @@
     <br>
 
     <div class="container ">
-    <h1 class="text-center">Login</h1>
-<!--     <div class="row">
-                <img class="img-fluid rounded mb-3 mb-md-0 center-block" src="{{url('temp/nasi.png')}}"  alt="cente"r>
+        <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Login</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+                        {{ csrf_field() }}
+
+                        <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
+                            <label for="username" class="col-md-4 control-label">Username</label>
+
+                            <div class="col-md-6">
+                                <input id="username" type="text" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
+
+                                @if ($errors->has('username'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('username') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">Password</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : ''}}> Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Login
+                                </button>
+
+                                <a class="btn btn-link" href="{{ url('/password/reset') }}">
+                                    Forgot Your Password?
+                                </a>
+                                <a class="btn btn-link" href="{{ url('/password/reset') }}">
+                                    Sign Up
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
- -->        <form>
-          <div class="container ">
-              <div class="row well">
-                <div class="col-md-4">
-                    <label><b>Email</b></label>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="Enter Email" name="email" required>
-                </div>
-            </div>
-            <div class="row well">
-              <div class="col-md-4">
-                <label><b>Password</b></label>
-            </div>
-            <div class="col-md-6">
-                <input type="password" placeholder="Enter Password" name="psw" required>
-            </div>
-        </div>
-<!--        <div class="row well">
-          <div class="col-md-4">
-            <label><b>Repeat Password</b></label>
-        </div>
-        <div class="col-md-6">
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
-            <input type="checkbox" checked="checked"> Remember me
-        </div>
-    </div>-->
-    <div class="row well">
-    <p class="text-center">Dengan membuat akun ini Anda telah menyetujui ketentuan & persyaratan <a href="#">Ketentuan & Persyaratan</a>.</p>
-      <div class="clearfix text-center">
-          <a type="button"  class="cancelbtn" href="{{url('/bungkus')}}">Login</a>
-          <a type="submit" class="signupbtn" href="{{url('/form')}}">Sign Up</a>
-      </div>
-  </div>
-</form>
-</div>
+    </div>
 
 
 <!-- /.container -->
