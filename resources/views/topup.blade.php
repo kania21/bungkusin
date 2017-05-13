@@ -46,15 +46,15 @@
             <div class="collapse navbar-collapse" id="navbarExample">
 
                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rp 28.000</a>
+                        <a class="nav-link" href="{{url('/topup')}}">Rp 28.000</a>
                     </li>
                    <!--  <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
-                    </li> --> -->
+                    </li> --> 
                 </ul>
             </div>
         </div>
@@ -63,21 +63,19 @@
 
     <div class="container">
     <div class="span12">
-    <div class="">
-            <style>
-        h5 {
-            color: #3CB371;
-        } </style>
-        <hr class="soften"/>    
+    <div class="">    
         <div class="table-responsive">
             <table class="table table-bordered table-condensed ">
                 
                 <tbody>
                     <tr>
-                        <td colspan="2"><center>BungPay : <b>Rp 29.000</b></center></td>
+                        <td colspan="2" style="background-color:    #f0ad4e"><center>BungPay : <b><h1>Rp 29.000</h1></b></center></td>
                     </tr>
                     <tr>
-                        <td colspan="1"><a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><center>By Transfer</center></a>
+                        <td align="center">
+                            <a style="width: 100%" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="{{url('temp/transfer.png')}}" style="width: 50px;height: 50px"><br>
+                            <center><b>Via Transfer Bank</b></center></a>
                             <div class="collapse" id="collapseExample">
                               <div class="well">
                               <br>
@@ -87,32 +85,70 @@
                                   <input type="radio" name="gender" value="25000"> Rp 25.000<br>
                                   <input type="radio" name="gender" value="50000"> Rp 50.000<br><br>
                                   <input type="submit" value="submit">
-                                </form>                                
+                                </form>                             
                               </div>
                             </div>
                         </td>
-
-                        <td colspan="1"><a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample"><center>By Pulsa</center></a>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <a style="width: 100%" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                            <img src="{{url('temp/hp.png')}}" style="width: 50px;height: 50px"><br>
+                            <center><b>Via Pulsa</b></center></a>
                             <div class="collapse" id="collapseExample1">
                               <div class="well">
-                                <br>
+                              <br>
                                 Pilih Nominal<br>
-                                <form class="form-group" method="get" action="{{url('pulsa')}}">
+                                <form class="form-group" method="get" action="{{url('transfer')}}">
                                   <input type="radio" name="gender" value="10000" checked> Rp 10.000<br>
                                   <input type="radio" name="gender" value="25000"> Rp 25.000<br>
                                   <input type="radio" name="gender" value="50000"> Rp 50.000<br><br>
                                   <input type="submit" value="submit">
-                                </form>  
+                                </form>                             
                               </div>
                             </div>
                         </td>
-                       
+                    </tr>
+                    <tr>
+                        <td align="center">                              
+                            <a style="width: 100%" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                            <img src="{{url('temp/topup.png')}}" style="width: 50px;height: 50px"><br>
+                            <center><b>History BungPay</b></center></a>
+                            <div class="collapse" id="collapseExample2">
+                              <div class="well">
+                                  <br>
+                                  <table class="table table-hover">
+                                      <thead>
+                                        <th>Tanggal</th>
+                                        <th>Topup/Pemakaian</th>
+                                        <th>Jumlah</th>
+                                      </thead>
+                                      <tr>
+                                        <td>15 April 2017</td>
+                                        <td>Topup</td>
+                                        <td>50.000</td>
+                                      </tr>
+                                      <tr>
+                                        <td>13 April 2017</td>
+                                        <td>Pemakaian</td>
+                                        <td>20.000</td>
+                                      </tr>
+                                      <tr>
+                                        <td>1 April 2017</td>
+                                        <td>Topup</td>
+                                        <td>50.000</td>
+                                      </tr>
+                                  </table>
+                              </div>
+                            </div>
+                        </td>
+                    </tr>
 
+                       
 
   
 
-                    </tr>
-
+                 
 
 
                    
