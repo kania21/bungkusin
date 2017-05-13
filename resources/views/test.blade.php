@@ -4,12 +4,12 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1>
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
-
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -48,13 +48,18 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Welcome! <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Welcome, Tiara! <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('topup')}}">Rp 50.000</a>
+                        </li>
+                        <li class="nav-item">
+                            <form role="search" method="get">
+                            <input type="search" name="search" placeholder="Cari Merchant..">
+                            </form>
                         </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -71,39 +76,13 @@
         <div class="navbar-brand">
             <ul class="nav">
                 <!-- <h1 class="my-4">PILIH MERCHANT</h1> -->
-                <style> 
-                    input[type=text] {
-                        width: 398px;
-                        box-sizing: border-box;
-                        border: 2px solid #ccc;
-                        border-radius: 4px;
-                        font-size: 16px;
-                        background-color: white;
-                        background-image: url('searchicon.png');
-                        background-position: 10px 10px; 
-                        background-repeat: no-repeat;
-                        padding: 12px 30px 12px 20px;
-                        -webkit-transition: width 0.4s ease-in-out;
-                        transition: width 0.4s ease-in-out;
-                    }
-
-                /*input[type=text]:focus {
-                    width: 60%;
-                }*/
-            </style>
+               
         </head>
         <body>
 
             <h1 class="my-4">PILIH MERCHANT</h1>
 
-            <form role="search" method="get" action="" class="my-4">
-                <div class=container>
-                    <div class="col-md-8" style="text-align: right;">
-                        <input type="text" name="search" placeholder="Cari Merchant">
-                        <!-- <link rel="icon" href="http://www.freeiconspng.com/uploads/search-icon-png-2.png"> -->
-                    </div>
-                </div>
-            </form>
+            
         </ul>
     </div>
 
@@ -182,26 +161,7 @@
     <hr>
 
     <!-- Pagination -->
-    <ul class="pagination justify-content-center">
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-            </a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#">1</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">2</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </li>
-                </ul>
+    
 
             </div>
             <!-- /.container -->
@@ -209,7 +169,7 @@
             <!-- Footer -->
             <footer class="py-5 bg-inverse">
                 <div class="container">
-                    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+                    <p class="m-0 text-center text-white">Copyright &copy; Bungkusin Team</p>
                 </div>
                 <!-- /.container -->
             </footer>
