@@ -9,12 +9,14 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
+
 
     <!-- Bootstrap core CSS -->
-    <link href="{{url('temp/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{url('temp/css/1-col-portfolio.css')}}" rel="stylesheet">
+    <link href="temp/css/1-col-portfolio.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -45,8 +47,8 @@
                 <div class="collapse navbar-collapse" id="navbarExample">
 
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url('/menumer')}}">Tambah Menu</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url('/merchant')}}">Daftar Pesanan</a>
                         </li>
                        <!--  <li class="nav-item">
                             <a class="nav-link" href="#">Rp 50.000</a>
@@ -64,11 +66,8 @@
     <!-- Page Content -->
     <div class="container">
         <h1 class="my-4">Sego Njamoer</h1>
-        <style>
-            h5 {
-                color: #3CB371;
-            } </style>
-            <h5>*Menu telah ditambahkan</h5></style>
+        
+            <p style="color:red;font-size:17px;font-style:italic;">*Menu telah ditambahkan</p>  
             <div class="row">
                 <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
@@ -76,7 +75,7 @@
                         <div class="card-block">
                             <h4 class="card-title"><a href="#">Sego Crispy</a></h4>
                             <h2 data-price='7000' id="price1">Rp .7.000</h2>
-                            <a type="button" class="btn btn-success text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
+                            <a class="btn btn-primary text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
                         </div>
                     </div>
                 </div>
@@ -86,7 +85,7 @@
                         <div class="card-block">
                             <h4 class="card-title"><a href="#">Sego Rendang</a></h4>
                             <h2 data-price='7000' id="price2">Rp . 7.000</h2>
-                            <a type="button" class="btn btn-success text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
+                            <a class="btn btn-primary text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +95,7 @@
                         <div class="card-block">
                             <h4 class="card-title" ><a href="#">Sate Njamoer</a></h4>
                             <h2 data-price='12000' id="price3">Rp . 12.000</h2>
-                            <a type="button" class="btn btn-success text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
+                            <a class="btn btn-primary text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +108,7 @@
                         <div class="card-block">
                             <h4 class="card-title"><a href="#">Somay Njamoer</a></h4>
                             <h2 data-price='11000' id="price4">Rp . 11.000</h2>
-                            <a type="button" class="btn btn-success text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
+                            <a class="btn btn-primary text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +118,7 @@
                         <div class="card-block">
                             <h4 class="card-title"><a href="#">Sosis Njamoer</a></h4>
                             <h2 data-price='12000' id="price5">Rp . 12.000</h2>
-                            <a type="button" class="btn btn-success text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
+                            <a class="btn btn-primary text-center" href="{{url('/editmenu')}}">EDIT MENU</a>
                         </div>
                     </div>
                 </div>

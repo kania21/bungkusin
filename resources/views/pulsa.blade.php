@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
 
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,14 +48,11 @@
 
                  <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
+                        <a class="nav-link" href="{{url('/history')}}">History Pesanan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Rp 28.000</a>
                     </li>
-                   <!--  <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li> --> -->
                 </ul>
             </div>
         </div>
@@ -64,54 +62,39 @@
     <div class="container">
     <div class="span12">
     <div class="">
-            <style>
-        h5 {
-            color: #3CB371;
-        } </style>
-        <hr class="soften"/>    
+            
         <div class="table-responsive">
             <table class="table table-bordered table-condensed ">
                 
                 <tbody>
                     <tr>
-                        <td colspan="2"><center>Pilih Provider</center><br> </td>
-                    </tr>
-                    <tr>
-                        <td colspan="1"><a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            XL                 
-                        </a>
+                        <center><label><img src="{{url('temp/sim.png')}}" style="width: 40px;height: 40px"><b><h2>Pilih Provider</h2></b></center></label>
+                        <td>
+                        <select class="form-control">
+                          <option>simPATI</option>
+                          <option>Kartu AS</option>
+                          <option>Mentari Ooredoo</option>
+                          <option>IM3 Ooredoo</option>
+                          <option>XL</option>
+                          <option>3</option>
+                        </select><br><center>
+                        <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Pilih                 
+                        </a></center>
                         <div class="collapse" id="collapseExample">
-                              <div class="well">
+                              <div class="well" style="text-align: center">
                               <br>
-                                Masukkan no.HP<br>
+                                <label>Masukkan no.HP</label><br>
                                 <form class="form-group" method="get" action="{{url('transfer')}}">
-                                  <input type="text" name="nomor"><br>
-                                  <input type="submit" value="submit">
-                                </form>                                
-                              </div>
-                            </div></td></tr>
-
-                    <tr><td colspan="1"><a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">INDOSAT</a>
-                    <div class="collapse" id="collapseExample1">
-                              <div class="well">
-                              <br>
-                                Masukkan no.HP<br>
-                                <form class="form-group" method="get" action="{{url('transfer')}}">
-                                  <input type="text" name="nomor"><br>
-                                  <input type="submit" value="submit" href="{{url('/bungkus')}}">
+                                  <input type="text" name="nomor"><br><br>
+                                  <input class="btn btn-primary" type="submit" value="Submit">
                                 </form>                                
                               </div>
                             </div>
-
-                    </td></tr>
-
-                        
-                       
-
-
-  
-
+                            </td>
                     </tr>
+
+                   
 
 
 

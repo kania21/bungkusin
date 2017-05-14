@@ -9,9 +9,12 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
+
 
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Custom styles for this template -->
     <link href="temp/css/1-col-portfolio.css" rel="stylesheet">
@@ -147,13 +150,11 @@
                 <div class="collapse navbar-collapse" id="navbarExample">
 
                     <ul class="navbar-nav ml-auto">
+                        
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Welcome! <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{url('/history')}}">History Pesanan</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="{{url('/topup')}}">Rp 50.000</a>
                         </li>
                     <!-- <li class="nav-item">
@@ -177,8 +178,8 @@
                 <div class="col-md-12 col-md-offset-2">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <div class="pull-right">
-                                <div class="btn-group text-center">
+                            <div class="pull-right" style="text-align:center">
+                                <div class="btn-toolbar"  aria-label="Filter by">
                                     <button type="button" class="btn btn-warning btn-filter" data-target="proses">Dalam Proses</button>
                                     <button type="button" class="btn btn-success btn-filter" data-target="selesai">Sudah Selesai</button>
                                     <button type="button" class="btn btn-danger btn-filter" data-target="batal">Dibatalkan</button>

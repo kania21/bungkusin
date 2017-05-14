@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
 
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -63,154 +64,70 @@
 
     <div class="container">
     <div class="span12">
-    <div class="">
-            <style>
-        h5 {
-            color: #3CB371;
-        } </style>
+    <div>
         <hr class="soften"/>    
         <div class="table-responsive">
             <table class="table table-bordered table-condensed ">
                 
                 <tbody>
                     <tr>
-                        <td colspan="2"><center>Transfer : <b>Rp 25.012</b><br> Sebelum Selasa,9 Mei 2017<br>Pukul 11.00</td></center>
+                        <td colspan="2"><center>Transfer : <h1>Rp 25.<b>012</b></h1>
+                         <p style="color:red;font-size:13px;font-style:italic;">*Perhatikan 3 digit terakhir</p>   
+                         Sebelum <b><h5>Selasa, 9 Mei 2017<br>Pukul 11.00</b></h5></td></center>
                     </tr>
                     <tr>
-                        <td colspan="1">
-                            <div class="col s12">
-           
-                
-                    <div class="row left-align" style="margin: 0">
-                        <div class="col-xs-4" style="padding-top: 20px">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/BankCentralAsia-logo.svg/640px-BankCentralAsia-logo.svg.png" class="responsive-img">
-                        </div>
-                        <div class="col-xs-8">
-                            BCA<br>
-                            721-213-230<br>
-                            a.n PT Bungkusin <br>
-                        </div>
-                    </div>
-                    </td>
-
-                    <tr><td colspan="1">
-                     <div class="row left-align" style="margin: 0">
-                        <div class="col-xs-4" style="padding-top: 20px">
-                            <img src="http://3.bp.blogspot.com/-YIjg8YYhtzk/Vkj3HfpLvXI/AAAAAAAAARQ/kvZDemP5Vc0/s1600/Logo%2BBank%2BMandiri%2BStandard%2BJPEG.jpg" class="responsive-img">
-                        </div>
-                        <div class="col-xs-8">
-                            BCA<br>
-                            721-213-230<br>
-                            a.n PT Bungkusin <br>
-                        </div>
-                    </div>    
-
-                    </td></tr>
-
-
-
-                   
-                    
-               
-        </div>
-                            
-                        </td>
-
-                        
-                       
-
-
-  
-
-                    </tr>
-
-
-
-
-<!-- <center><button type="button" href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">By Transfer</button></center> -->
-                   
-                   <!--  <tr>
-                       
                         <td>
-                            Rp 10.000<br>
-                            DEBIT
+                            <div class="row">
+                                <div class="col s6" style="text-align: center">
+                                    <img src="{{url('temp/mandiri.png')}}" style="width:150px;height:75px">
+                                </div>
+                                <div class="col s6">
+                                     MANDIRI<br>
+                                        721-213-230<br>
+                                        a.n PT Bungkusin
+                                </div>
+                            </div>
                         </td>
-                        
-                        <td>2017/09/25</td>
-            
+                    </tr>
+                   <tr>
+                        <td>
+                            <div class="row">
+                                <div class="col s6" style="text-align: center">
+                                    <img src="{{url('temp/bca.png')}}" style="width:150px;height:75px">
+                                </div>
+                                <div class="col s6">
+                                     BCA<br>
+                                        721-213-230<br>
+                                        a.n PT Bungkusin
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                       
                         <td>
-                            Rp 10.000<br>
-                            KREDIT
+                            <div class="row">
+                                <div class="col s6" style="text-align: center">
+                                    <img src="{{url('temp/bni.png')}}" style="width:150px;height:70px">
+                                </div>
+                                <div class="col s6">
+                                     BNI<br>
+                                        721-213-230<br>
+                                        a.n PT Bungkusin
+                                </div>
+                            </div>
                         </td>
-                        
-                        <td>2017/09/25</td>
-            
-                    </tr> -->
-                    
-                    <!-- <tr>
-                        <td colspan="4">Sisa Saldo:  </td>
-                        <td class="label-primary"> 
-                            <style type="text/css">
-                            span.inner {
-                                color: black;
-                            }
-                            span.outer {
-                                color: red;
-                                text-decoration: line-through;
-                            }
-                            </style>
-                        <span class="outer">
-                            <span class="inner">Rp 22.000</span>
-                        </span><br> Rp 28.000</td>
-                    </tr> -->
-                </tbody>
-            </table><br>
-           <a href="{{url('/bungkus')}}"><button type="button" class="btn btn-primary" >Kembali ke Home</button></a>
-        <!-- <a href="{{url('/proses')}}" class="btn btn-/primary navbar-toggler-right"> Konfirmasi Pesanan </a> -->
-    </div>
-    </div>
-    </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Pilih Nominal</h4>
-      </div>
-      <div class="modal-body">
-        <div class="table-responsive">
-
-            <table class="table table-bordered table-condensed ">
-                
-                <tbody>
-
-                   
-                    <tr>
-                       
-                        <td>
-                            BCA
-                        </td>
-                        
-                                 
                     </tr>
-                    <tr>
-                       
-                        <td>
-                            BNI
-                        </td>
-                        
-                        
-            
-                    </tr>
-                    
-                
                 </tbody>
             </table>
+            <br>
+
+        <div class="col s12" style="text-align: center">
+            <a  href="{{url('/topup')}}" class="btn btn-primary">Kembali ke Topup</a>
         </div>
-      </div>
+    </div>
+    </div>
+    </div>
+    
       
 <!-- Pagination -->
 <!-- /.container -->

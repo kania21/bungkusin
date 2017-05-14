@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
 
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +78,7 @@
         background-color: #eee;
     }
     .table-filter tbody tr td {
-        padding: 70px;
+        
         margin: auto;
         vertical-align: middle;
         border-top-color: #eee;

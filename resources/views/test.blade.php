@@ -47,20 +47,19 @@
                 <div class="collapse navbar-collapse" id="navbarExample">
 
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Welcome, Tiara! <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url('/history')}}">History Pesanan</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="{{url('topup')}}">Rp 50.000</a>
                         </li>
-                        <li class="nav-item">
-                            <form role="search" method="get">
-                            <input type="search" name="search" placeholder="Cari Merchant..">
-                            </form>
-                        </li>
+                        <div class="nav-item active">
+                            <input type="text" class="form-control" placeholder="Cari Merchant.."><i class="glyphicon glyphicon-search"></i>
+                            
+                        </div>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li> -->
@@ -85,6 +84,8 @@
             
         </ul>
     </div>
+   
+
 
     <!-- Project One -->
     <div class="row">

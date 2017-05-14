@@ -4,11 +4,12 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
 
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +36,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" style="background-color: #ffce99">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,10 +47,10 @@
             <div class="collapse navbar-collapse" id="navbarExample">
 
                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{url('/history')}}">History Pesanan</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="{{url('/topup')}}">Rp 28.000</a>
                     </li>
                    <!--  <li class="nav-item">
@@ -79,12 +80,12 @@
                             <div class="collapse" id="collapseExample">
                               <div class="well">
                               <br>
-                                Pilih Nominal<br>
+                                <label>Pilih Nominal</label><br>
                                 <form class="form-group" method="get" action="{{url('transfer')}}">
-                                  <input type="radio" name="gender" value="10000" checked> Rp 10.000<br>
-                                  <input type="radio" name="gender" value="25000"> Rp 25.000<br>
-                                  <input type="radio" name="gender" value="50000"> Rp 50.000<br><br>
-                                  <input type="submit" value="submit">
+                                  <label class="radio-inline"><input type="radio" name="gender" value="10000" checked> Rp 10.000</label><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="25000"> Rp 25.000</label><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="50000"> Rp 50.000</label><br><br>
+                                  <input class="btn btn-primary" type="submit" value="Pilih">
                                 </form>                             
                               </div>
                             </div>
@@ -98,12 +99,12 @@
                             <div class="collapse" id="collapseExample1">
                               <div class="well">
                               <br>
-                                Pilih Nominal<br>
-                                <form class="form-group" method="get" action="{{url('transfer')}}">
-                                  <input type="radio" name="gender" value="10000" checked> Rp 10.000<br>
-                                  <input type="radio" name="gender" value="25000"> Rp 25.000<br>
-                                  <input type="radio" name="gender" value="50000"> Rp 50.000<br><br>
-                                  <input type="submit" value="submit">
+                                <label>Pilih Nominal</label><br>
+                                <form class="form-group" method="get" action="{{url('pulsa')}}">
+                                  <label class="radio-inline"><input type="radio" name="gender" value="10000" checked> Rp 10.000</label><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="25000"> Rp 25.000</label><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="50000"> Rp 50.000</label><br><br>
+                                  <input class="btn btn-primary" type="submit" value="Pilih">
                                 </form>                             
                               </div>
                             </div>
@@ -117,28 +118,30 @@
                             <div class="collapse" id="collapseExample2">
                               <div class="well">
                                   <br>
-                                  <table class="table table-hover">
-                                      <thead>
-                                        <th>Tanggal</th>
-                                        <th>Topup/Pemakaian</th>
-                                        <th>Jumlah</th>
-                                      </thead>
-                                      <tr>
-                                        <td>15 April 2017</td>
-                                        <td>Topup</td>
-                                        <td>50.000</td>
-                                      </tr>
-                                      <tr>
-                                        <td>13 April 2017</td>
-                                        <td>Pemakaian</td>
-                                        <td>20.000</td>
-                                      </tr>
-                                      <tr>
-                                        <td>1 April 2017</td>
-                                        <td>Topup</td>
-                                        <td>50.000</td>
-                                      </tr>
-                                  </table>
+                                    <div style="overflow-x:auto;">
+                                      <table class="table table-hover">
+                                          <thead>
+                                            <th>Tanggal</th>
+                                            <th>Topup/Pakai</th>
+                                            <th>Jumlah</th>
+                                          </thead>
+                                          <tr>
+                                            <td>15 April 2017</td>
+                                            <td><p style="color:#5cb85c">Topup</p></td>
+                                            <td>50.000</td>
+                                          </tr>
+                                          <tr>
+                                            <td>13 April 2017</td>
+                                            <td><p style="color:#d9534f">Pakai</p></td>
+                                            <td>20.000</td>
+                                          </tr>
+                                          <tr>
+                                            <td>1 April 2017</td>
+                                            <td><p style="color:#5cb85c">Topup</p></td>
+                                            <td>50.000</td>
+                                          </tr>
+                                      </table>
+                                    </div> 
                               </div>
                             </div>
                         </td>

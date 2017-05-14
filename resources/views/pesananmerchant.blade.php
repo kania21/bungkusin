@@ -9,6 +9,8 @@
   <meta name="author" content="">
 
   <title>BUNGKUS.IN</title>
+  <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
+
 
   <!-- Bootstrap core CSS -->
   <link href="{{url('temp/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -175,7 +177,7 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{url('/addmenu')}}">Menu <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{url('/addmenu')}}">Edit Menu <span class="sr-only">(current)</span></a>
                     </li>
                  <!--    <li class="nav-item">
                         <a class="nav-link" href="#">About</a>

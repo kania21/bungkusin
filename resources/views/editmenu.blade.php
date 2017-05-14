@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
 
 
     <!-- Bootstrap core CSS -->
@@ -69,37 +70,45 @@
             </div>
         </div>
         <hr>
-    <form>
-        <div class="well">
+      <form class="form-control">   
+        <div class="container">
             <div class="clearfix">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label><b>Foto</b></label>
                     </div> 
                     <div>
                         <input type="file" name="fileToUpload" id="fileToUpload">
-                        <input type="submit" value="Upload Image" name="submit"><br>
                     </div>
-                </div>
-                <hr>
+                </div><br>
+                <hr><br>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label><b>Nama Makanan</b></label>
                     </div> 
                     <div>
-                        <input type="text" placeholder="Sego Crispy" name="nama-makanan" required><br>
+                        <input type="text" placeholder="ex: Sego Crispy" name="nama-makanan" required><br>
                     </div>
-                </div>
-                <hr>
+                </div><br>
+                <hr><br>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
+                        <label><b>Deskripsi Makanan</b></label>
+                    </div> 
+                    <div>
+                        <textarea class="form-control" rows="6" placeholder="Isi dengan deskripsi makanan seperti terbuat dari bahan apa,rasanya bagaimana,dll" name="nama-makanan" required></textarea><br>
+                    </div>
+                </div><br>
+                <hr><br>
+                <div class="row">
+                    <div class="col-md-4">
                         <label><b>Harga</b></label>
                     </div> 
                     <div>
-                        <input type="text" placeholder="Rp 7000" name="harga" required>
+                        <input type="text" placeholder="ex: 7000" name="harga" required>
                     </div>
-                </div>
-                <hr>
+                </div><br>
+                <hr><br>
               <a href="{{url('/addmenu')}}" class="btn btn-primary"> Edit </a>
             </div>
     </form>
