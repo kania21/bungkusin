@@ -121,7 +121,7 @@
             </table>
             <br>
 
-        <div class="col s12" style="text-align: center">
+        <div class="col s12" style="text-align: right">
             <a  href="{{url('/topup')}}" class="btn btn-primary">Kembali ke Topup</a>
         </div>
     </div>

@@ -9,6 +9,8 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
+
 
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,23 +42,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="#">BUNGKUS.IN</a>
+            <a class="navbar-brand" href="{{url('/bungkus')}}">BUNGKUS.IN</a>
 
             <div class="collapse navbar-collapse" id="navbarExample">
 
-                <!-- <ul class="navbar-nav ml-auto">
+                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="signup.php">Sign Up <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li> -->
+                        <a class="nav-link" href="#">Rp 28.000</a>
+                    <li>
                 </ul>
             </div>
         </div>
@@ -67,15 +63,17 @@
 <br>
 <br>
       
-  <div class="container">
+  <div class="container" style="text-align:center">
+  <div class="panel panel-default">
   <table class="table">
   <thead>
-    <th><h4>NOMOR PESANAN</h4></th>
+    <th><h4 style="text-align:center">NOMOR PESANAN</h4></th>
     </thead>
-   <td><h1>PS001</h1></td>
+   <td><h1><b>PS001</b></h1></td>
    </table>
-  <h5><a class="btn btn-primary btn-lg" href="{{url('/bungkus')}}">Kembali ke Home</a></h5>
- 
+   <p style="color:red"><i>*Tukarkan nomor ini ke merchant untuk ambil pesanan</i></p>
+  <h6 style="text-align:center"><a class="btn btn-primary" href="{{url('/bungkus')}}">Kembali ke Home</a></h6>
+ </div>
 </div>
 
 <!-- Pagination -->

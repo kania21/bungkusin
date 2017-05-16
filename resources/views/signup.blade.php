@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
 
     <!-- Bootstrap core CSS 
     <link href="{{url('temp/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">

@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
+    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
 
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -63,44 +64,45 @@
 
     <div class="container">
     <div class="span12">
-    <div class="">
-            <style>
-        h5 {
-            color: #3CB371;
-        } </style>
-        <h5>*Item telah ditambahkan</h5>
-        <hr class="soften"/>    
-        <table class="table table-bordered table-condensed">
+    <div class="table-responsive">
+            
+           
+        <table class="table table-hover table-bordered">
             <thead>
                 <tr>
-                    <th>Makanan</th>
-                    <th>Deskripsi</th>
-                    <th>Harga /Unit</th>
-                    <th>Jumlah </th>
-                    <th>Total</th>
+                    <th colspan="2">Detail Pemesanan</th>
+                    <!-- <th>Nama</th>
+                    <th>Harga/Pcs</th>
+                    <th>Qty </th>
+                    <th>Total</th> -->
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><img width="100" src="{{url('/img/sate_12000.jpg')}}" alt=""></td>
-                    <td>Sate Njamoer<br><br></td>
+                    <td><img width="50" src="{{url('/img/sate_12000.jpg')}}" alt="">
+                    Sate Njamoer<br><br>
+                    </td>
+                    
                     <td>Rp 12.000</td>
-                    <td>1</td>
-                    <td>Rp 12.000</td>
+                    
                 </tr>
                 <tr>
-                    <td><img width="100" src="{{url('/img/somay_11000.jpg')}}" alt=""></td>
-                    <td>Pentol Njamoer<br><br></td>
-                    <td>Rp 10.000</td>
-                    <td>1</td>
-                    <td>Rp 10.000</td>
+                    <td>
+                <img width="50" src="{{url('/img/somay_11000.jpg')}}" alt="">
+                    Pentol Njamoer<br>
+                    </td>
+                    <td>Rp 16.000</td>
                 </tr>
-                <tr>
-                    <td colspan="4">Total produk:  </td>
-                    <td class="label-primary"> Rp 22.000</td>
-                </tr>
-                <tr>
-                    <td colspan="4">Sisa Saldo:  </td>
+                 <tr>
+                    <td>Total <br> </td>
+                    <td>Rp 28.000</td><br>
+                 </tr> 
+                 <tr style="background-color: #f0ad4e ">
+                    <td>BungPay <br> </td>
+                    <td>Rp 50.000</td><br>
+                 </tr>   
+                 <tr>
+                 <td>Sisa Saldo: </td>
                     <td class="label-primary"> 
                         <style type="text/css">
                         span.inner {
@@ -111,10 +113,24 @@
                             text-decoration: line-through;
                         }
                         </style>
+                        
                     <span class="outer">
-                        <span class="inner">Rp 22.000</span>
-                    </span><br> Rp 28.000</td>
+
+                        <span class="inner">Rp 28.000</span>
+                    </span><br> Rp 22.000</td>
                 </tr>
+                <!-- <tr>
+                    <td></td>
+                    <td><br></td>
+                    <td>Rp 10.000</td>
+                    <td>1</td>
+                    <td>Rp 10.000</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Total produk:  </td>
+                    <td class="label-primary"> Rp 22.000</td>
+                </tr>
+                -->
             </tbody>
         </table><br/>
         <a href="{{url('/proses')}}" class="btn btn-primary navbar-toggler-right"> Konfirmasi Pesanan </a>

@@ -85,7 +85,7 @@
                               <div class="well" style="text-align: center">
                               <br>
                                 <label>Masukkan no.HP</label><br>
-                                <form class="form-group" method="get" action="{{url('transfer')}}">
+                                <form class="form-group" method="get" action="{{url('topup')}}">
                                   <input type="text" name="nomor"><br><br>
                                   <input class="btn btn-primary" type="submit" value="Submit">
                                 </form>                                
@@ -99,89 +99,7 @@
 
 
 
-<!-- <center><button type="button" href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">By Transfer</button></center> -->
-                   
-                   <!--  <tr>
-                       
-                        <td>
-                            Rp 10.000<br>
-                            DEBIT
-                        </td>
-                        
-                        <td>2017/09/25</td>
-            
-                    </tr>
-                    <tr>
-                       
-                        <td>
-                            Rp 10.000<br>
-                            KREDIT
-                        </td>
-                        
-                        <td>2017/09/25</td>
-            
-                    </tr> -->
-                    
-                    <!-- <tr>
-                        <td colspan="4">Sisa Saldo:  </td>
-                        <td class="label-primary"> 
-                            <style type="text/css">
-                            span.inner {
-                                color: black;
-                            }
-                            span.outer {
-                                color: red;
-                                text-decoration: line-through;
-                            }
-                            </style>
-                        <span class="outer">
-                            <span class="inner">Rp 22.000</span>
-                        </span><br> Rp 28.000</td>
-                    </tr> -->
-                </tbody>
-            </table><br/>
-        <!-- <a href="{{url('/proses')}}" class="btn btn-primary navbar-toggler-right"> Konfirmasi Pesanan </a> -->
-    </div>
-    </div>
-    </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Pilih Nominal</h4>
-      </div>
-      <div class="modal-body">
-        <div class="table-responsive">
 
-            <table class="table table-bordered table-condensed ">
-                
-                <tbody>
-
-                   
-                    <tr>
-                       
-                        <td>
-                            BCA
-                        </td>
-                        
-                                 
-                    </tr>
-                    <tr>
-                       
-                        <td>
-                            BNI
-                        </td>
-                        
-                        
-            
-                    </tr>
-                    
-                
-                </tbody>
-            </table>
-        </div>
-      </div>
       
 <!-- Pagination -->
 <!-- /.container -->
