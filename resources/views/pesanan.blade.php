@@ -42,7 +42,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="{{url('/bungkus')}}">BUNGKUS.IN</a>
+            <a href="{{url('/bungkus')}}">
+                <img src="{{url('temp/logo6.png')}}" alt="BUNGKUS.IN" href="{{url('/bungkus')}}">
+
 
             <div class="collapse navbar-collapse" id="navbarExample">
 
@@ -50,7 +52,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">Rp 28.000</a>
                     <li>
                 </ul>
