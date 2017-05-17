@@ -15,7 +15,7 @@ Route::get('/', 'MerchantController@index');
 
 route:: get('/menu/{id}','MenuController@index');
 #	route:: get('/menu','MenuController@index');
-route:: get('/hasil','MenuController@hasil');
+route:: post('/hasil','MenuController@hasil')->name('hasil');
 route:: get('/bungkus','MerchantController@bungkus');
 route:: get('/form','MerchantController@form');
 route:: get('/proses','MerchantController@proses');
@@ -27,3 +27,9 @@ route:: get('/menumer','MerchantController@merchantmenu');
 route:: get('/topup','UserController@topup');
 route:: get('/transfer','UserController@transfer');
 route:: get('/pulsa','UserController@pulsa');
+
+route::post('/updatemenu', "MenuController@updatemenu");
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

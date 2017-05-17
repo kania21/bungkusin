@@ -70,46 +70,47 @@
             </div>
         </div>
         <hr>
-      <form class="form-control">   
+      <form class="form-horizontal" action="{{url('/updatemenu')}}" method="post" enctype="multipart/form-data">   
         <div class="container">
             <div class="clearfix">
-                <div class="row">
-                    <div class="col-md-4">
-                        <label><b>Foto</b></label>
-                    </div> 
-                    <div>
-                        <input type="file" name="fileToUpload" id="fileToUpload">
-                    </div>
-                </div><br>
+            {{ csrf_field() }}
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+             <br>
                 <hr><br>
-                <div class="row">
-                    <div class="col-md-4">
+                
+                    <div class="col-md-12">
                         <label><b>Nama Makanan</b></label>
                     </div> 
                     <div>
-                        <input type="text" placeholder="ex: Sego Crispy" name="nama-makanan" required><br>
+                        <input class="form-control"  type="text" placeholder="ex: Sego Crispy" name="namamakanan" required><br>
                     </div>
-                </div><br>
+                <br>
                 <hr><br>
-                <div class="row">
-                    <div class="col-md-4">
+                
+                    <div class="col-md-12">
                         <label><b>Deskripsi Makanan</b></label>
                     </div> 
                     <div>
-                        <textarea class="form-control" rows="6" placeholder="Isi dengan deskripsi makanan seperti terbuat dari bahan apa,rasanya bagaimana,dll" name="nama-makanan" required></textarea><br>
+                        <textarea class="form-control" rows="6" placeholder="Isi dengan deskripsi makanan seperti terbuat dari bahan apa,rasanya bagaimana,dll" name="deskripsi" required></textarea><br>
                     </div>
-                </div><br>
+               <br>
                 <hr><br>
-                <div class="row">
-                    <div class="col-md-4">
+                
+                    <div class="col-md-12">
                         <label><b>Harga</b></label>
                     </div> 
                     <div>
                         <input type="text" placeholder="ex: 7000" name="harga" required>
                     </div>
-                </div><br>
+                <br>
                 <hr><br>
-              <a href="{{url('/addmenu')}}" class="btn btn-primary"> Edit </a>
+              <button type="submit" class="btn btn-primary"> Edit </button>
             </div>
     </form>
   </body>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Merchant;
+use Illuminate\Support\Facades\Auth;
 
 class MerchantController extends Controller
 {
@@ -13,6 +14,8 @@ class MerchantController extends Controller
     	return view('signup');
     }
     public function bungkus(){
+        if(Auth::user()->merchant) return redirect('/addmenu');
+        // if(0) echo "a";
     	return view('test');
     }
     public function form(){
