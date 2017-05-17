@@ -71,7 +71,7 @@
                 
                 <tbody>
                     <tr>
-                        <td colspan="2"><center>Transfer : <h1>Rp 25.<b>012</b></h1>
+                        <td colspan="2"><center>Transfer : <h1 id="saldo">{{$isi}}</h1>
                          <p style="color:red;font-size:13px;font-style:italic;">*Perhatikan 3 digit terakhir</p>   
                          Sebelum <b><h5>Selasa, 9 Mei 2017<br>Pukul 11.00</b></h5></td></center>
                     </tr>
@@ -136,6 +136,17 @@
 <script src="temp/vendor/jquery/jquery.min.js"></script>
 <script src="temp/vendor/tether/tether.min.js"></script>
 <script src="temp/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    function convertToRupiah(angka)
+    {
+        var rupiah = '';        
+        var angkarev = angka.toString().split('').reverse().join('');
+        for(var i = 0; i < angkarev.length; i++) if(i%3 == 0) rupiah += angkarev.substr(i,3)+'.';
+        return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
+    }
+
+    $('#saldo').html(convertToRupiah($('#saldo').html()));
+</script>
 
 </body>
 </html>

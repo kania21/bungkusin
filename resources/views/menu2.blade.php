@@ -48,13 +48,13 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Welcome! <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Welcome,Tiara! <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
+                            <a class="nav-link" href="{{url('/history')}}">History Pesanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/topup')}}">Rp 50.000</a>
+                            <a class="nav-link" href="{{url('/topup')}}">BungPay: Rp 50.000</a>
                         </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -103,34 +103,25 @@
                         <h4 class="card-title" ><a href="#">Gila Aja</a></h4>
                         <h2 data-price='13000' id="price3">Rp 13.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="3">-</a>
-                                <input type="text" value="0" class="jumlah text-center" id="jumlah3" disabled>
-                                <a class="btn btn-primary tambah total" href="#" data-id="3">+</a>
-                            
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
+                        <input type="text" value="0" class="jumlah text-center" id="jumlah3" disabled>
+                        <a class="btn btn-primary tambah total" href="#" data-id="3">+</a>
+                    </div>                            
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
+                <div class="card">
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolgilabanget_14000.jpg')}}" alt=""></a>
                     <div class="card-block">
-                        <h4 class="card-title"><a href="#">Gila Banget</a></h4>
-                        <h2 data-price='14000' id="price4">Rp 14.000</h2>
+                        <h4>Gila Banget</h4>
+                        <h2 data-price='14000' id="price4">Rp . 14.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="4">-</a>
-                        <input type="text" value="0" class="jumlah text-center" id="jumlah4" disabled>
+                        <input type="text" value="0" class="jumlah text-center" id="jumlah4" style="width: 150px; height: 30px" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="4">+</a>
                     </div>
                 </div>
             </div>
-
-            
-
-
+            </div>        
             <hr>
-
         <br>
 
         <div class="container">

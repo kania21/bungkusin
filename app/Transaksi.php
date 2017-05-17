@@ -10,4 +10,8 @@ class Transaksi extends Model
     protected $primaryKey = 'id_transaksi';
     public $timestamps = false;
     public $incrementing = false;
+
+    public function order(){
+    	return $this->hasMany('App\Transmenu', 'id_transaksi');
+    }
 }

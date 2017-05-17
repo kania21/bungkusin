@@ -21,8 +21,9 @@ class MerchantController extends Controller
     public function form(){
     	return view('formsignup');
     }
-    public function proses(){
-        return view('pesanan');
+    public function proses(Request $request){
+        $this->data["id_transaksi"]=$request->id;
+        return view('pesanan', $this->data);
     }
     public function history(){
         return view('historay');

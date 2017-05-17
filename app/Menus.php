@@ -10,4 +10,8 @@ class Menus extends Model
     protected $primaryKey = 'id_menu';
     public $timestamps = false;
     public $incrementing = false;
+
+    public function transmenu(){
+    	return $this->hasMany('App\Transmenu', 'id_menu');
+    }
 }

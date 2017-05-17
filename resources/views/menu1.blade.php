@@ -69,33 +69,25 @@
         <form action="{{route('hasil')}}" method="post">
         <div class="row">
         {{ csrf_field() }}
+            <input type="hidden" name="total" id="totalall">
+            <input type="hidden" name="id_merch" value="{{$merchant->id_merch}}">
+            @foreach($menus as $value)
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                <input type="hidden" name="merch" value="1">
-                    <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/ayamgeprek_15000.jpg')}}" alt=""></a>
+                    <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/'.$value->foto)}}" alt=""></a>
                     <div class="card-block">
-                        <h4 class="card-title"><a href="#">Ayam Geprek Bawang</a></h4>
-                        <h2 data-price='15000' id="price1">Rp 15.000</h2>
-                        <a class="btn btn-primary kurang total" href="#" data-id="1">-</a>
-                        <input type="text" value="0" name="jumlah[]" class="jumlah text-center" id="jumlah1" disabled>
-                        <input type="hidden" id="makanan1" name="makanan[]" value="">
-                        <a class="btn btn-primary tambah total" href="#" data-id="1">+</a>
+                        <h4 class="card-title"><a href="#">{{$value->nama_menu}}</a></h4>
+                        <h2 data-price='15000' id="price{{$value->id_menu}}">Rp 15.000</h2>
+                        <a class="btn btn-primary kurang total" href="#" data-id="{{$value->id_menu}}">-</a>
+                        <input type="text" value="0" name="jumlah[]" class="jumlah text-center" id="jumlah{{$value->id_menu}}" data-id="{{$value->id_menu}}" disabled>
+                        <input type="hidden" id="makanan{{$value->id_menu}}" name="makanan[]" value="">
+                        <a class="btn btn-primary tambah total" href="#" data-id="{{$value->id_menu}}">+</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/ayamgeprek_15000.jpg')}}" alt=""></a>
-                    <div class="card-block">
-                        <h4 class="card-title"><a href="#">Ayam Geprek Bawang</a></h4>
-                        <h2 data-price='15000' id="price2">Rp 15.000</h2>
-                        <a class="btn btn-primary kurang total" href="#" data-id="2">-</a>
-                        <input type="text" value="0" name="jumlah[]" class="jumlah text-center" id="jumlah2" disabled>
-                        <input type="hidden" id="makanan2" name="makanan[]" value="">
-                        <a class="btn btn-primary tambah total" href="#" data-id="2">+</a>
-                    </div>
-                </div>
-            </div>
+
+            @endforeach
+           
             <!-- <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/ayamgeprek_15000.jpg')}}" alt=""></a>
@@ -132,7 +124,9 @@
                 var id = $(this).data('id');
                 var tes = $('#jumlah'+id).val();
                 tes=parseInt(tes);
+                // alert(tes);
                 tes=tes+1;
+                // alert(id);
                 $('#jumlah'+id).val(tes);
                 $('#makanan'+id).val(id+"|"+tes);
                 
@@ -146,7 +140,7 @@
                 alert("tidak bisa dibawah 0");
                 tes = 0 ;
             }
-
+                // alert(id);
                 $('#jumlah' + id).val(tes);
                 $('#makanan'+id).val(id+"|"+tes);
                 
@@ -156,12 +150,17 @@
                 totalsemua=0;
                 $('.jumlah').each(function(i){
                             // var id = $(this).data('id');
-                            var babi=i+1
+                            // var babi=i+1
+                            babi=$(this).data('id');
+                            // alert(babi)
+
                             var harga = $('#price'+babi).data('price');
                             var total=parseInt(harga)*parseInt($('#jumlah'+babi).val());
                             // alert(total);
                             totalsemua=totalsemua+total;
+                            // alert(babi);
                             $('#totalsemua').html('Total Pembayaran : '+totalsemua);
+                            $('#totalall').val(totalsemua)
                             // alert($('#price'+babi ).data('price')); 
                         });
             });

@@ -70,7 +70,7 @@
                 
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color:    #f0ad4e"><center>BungPay : <b><h1>Rp 29.000</h1></b></center></td>
+                        <td colspan="2" style="background-color:    #f0ad4e"><center>BungPay : <b><h1 id="saldo">{{$user->bungpay}}</h1></b></center></td>
                     </tr>
                     <tr>
                         <td align="center">
@@ -125,21 +125,21 @@
                                             <th>Topup/Pakai</th>
                                             <th>Jumlah</th>
                                           </thead>
+                                          @foreach($topup as $value)
                                           <tr>
-                                            <td>15 April 2017</td>
-                                            <td><p style="color:#5cb85c">Topup</p></td>
-                                            <td>50.000</td>
+                                            <td>{{$value->waktu}}</td>
+                                            <td>
+                                                @if($value->jenis=='Topup')
+                                                    <p style="color:#5cb85c">Topup</p>
+                                                @else
+                                                    <p style="color:#d9534f">Pakai</p>
+                                                @endif
+
+                                            </td>
+                                            <td>{{$value->jumlah}}</td>
                                           </tr>
-                                          <tr>
-                                            <td>13 April 2017</td>
-                                            <td><p style="color:#d9534f">Pakai</p></td>
-                                            <td>20.000</td>
-                                          </tr>
-                                          <tr>
-                                            <td>1 April 2017</td>
-                                            <td><p style="color:#5cb85c">Topup</p></td>
-                                            <td>50.000</td>
-                                          </tr>
+                                          @endforeach
+                                          
                                       </table>
                                     </div> 
                               </div>
@@ -208,6 +208,17 @@
 <script src="temp/vendor/jquery/jquery.min.js"></script>
 <script src="temp/vendor/tether/tether.min.js"></script>
 <script src="temp/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    function convertToRupiah(angka)
+    {
+        var rupiah = '';        
+        var angkarev = angka.toString().split('').reverse().join('');
+        for(var i = 0; i < angkarev.length; i++) if(i%3 == 0) rupiah += angkarev.substr(i,3)+'.';
+        return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
+    }
+
+    $('#saldo').html(convertToRupiah($('#saldo').html()));
+</script>
 
 </body>
 </html>

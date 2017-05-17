@@ -71,7 +71,7 @@
   <thead>
     <th><h4 style="text-align:center">NOMOR PESANAN</h4></th>
     </thead>
-   <td><h1><b>PS001</b></h1></td>
+   <td><h1><b>PS{{$id_transaksi}}</b></h1></td>
    </table>
    <p style="color:red"><i>*Tukarkan nomor ini ke merchant untuk ambil pesanan</i></p>
   <h6 style="text-align:center"><a class="btn btn-primary" href="{{url('/bungkus')}}">Kembali ke Home</a></h6>
