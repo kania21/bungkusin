@@ -77,7 +77,7 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/'.$value->foto)}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title"><a href="#">{{$value->nama_menu}}</a></h4>
-                        <h2 data-price='15000' id="price{{$value->id_menu}}">Rp 15.000</h2>
+                        <h2 data-price='15000' id="price{{$value->id_menu}}">{{$value->harga}}</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="{{$value->id_menu}}">-</a>
                         <input type="text" value="0" name="jumlah[]" class="jumlah text-center" id="jumlah{{$value->id_menu}}" data-id="{{$value->id_menu}}" disabled>
                         <input type="hidden" id="makanan{{$value->id_menu}}" name="makanan[]" value="">
@@ -162,7 +162,7 @@
                             $('#totalsemua').html('Total Pembayaran : '+totalsemua);
                             $('#totalall').val(totalsemua)
                             // alert($('#price'+babi ).data('price')); 
-                        });
+                });
             });
             
         </script>
