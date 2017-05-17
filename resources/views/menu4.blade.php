@@ -77,7 +77,7 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pokpokoriginal_14000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title"><a href="#">Pok-Pok Original</a></h4>
-                        <h2 data-price='14000' id="price1">Rp . 14.000</h2>
+                        <h2 data-price='14000' id="price1">Rp 14.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="1">-</a>
                         <input type="text" value="0" name="jumlah[]" class="jumlah text-center" id="jumlah1" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="1">+</a>
@@ -89,7 +89,7 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pokpoktempura_14000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title"><a href="#">Pok-Pok Tempura</a></h4>
-                        <h2 data-price='14000' id="price2">Rp . 14.000</h2>
+                        <h2 data-price='14000' id="price2">Rp 14.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="2">-</a>
                         <input type="text" value="0" class="jumlah text-center" id="jumlah2" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="2">+</a>
@@ -101,7 +101,7 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/kentang_11000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title" ><a href="#">Kentang</a></h4>
-                        <h2 data-price='11000' id="price3">Rp . 11.000</h2>
+                        <h2 data-price='11000' id="price3">Rp 11.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="3">-</a>
                         <input type="text" value="0" class="jumlah text-center" id="jumlah3" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="3">+</a>
@@ -115,7 +115,7 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/tofu_11000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title"><a href="#">Tofu</a></h4>
-                        <h2 data-price='11000' id="price4">Rp . 11.000</h2>
+                        <h2 data-price='11000' id="price4">Rp 11.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="4">-</a>
                         <input type="text" value="0" class="jumlah text-center" id="jumlah4" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="4">+</a>
@@ -133,7 +133,7 @@
 
         <div class="container">
             <div class="col-12 text-center">
-                <a type="button" class="btn btn-success" href="{{url('/hasil')}}">PESAN</a>
+                <a class="btn btn-success" style="background-color: #025aa5" href="{{url('/hasil')}}">PESAN</a>
             </div>
         </div>
 

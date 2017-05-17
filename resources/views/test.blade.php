@@ -103,9 +103,8 @@
             </style>
             <h3>SEGO NJAMOER</h3>
             <h7>Jl. Gebang Wetan No. 2B<br>Gebang Putih, Sukolilo<br>Surabaya<br></h7>
-            <h8 style="font-weight: bold">Buka Pukul 08.00 - 22.00</h8><br>
-            <h8 style="font-weight: bold; color: red">Tutup!</h8><br><br>
-            <a class="btn btn-danger" href="#">Lihat Menu</a>
+            <h8 style="font-weight: bold">Buka Pukul 08.00 - 22.00</h8><br><br>
+            <a class="btn btn-primary" href="{{url('/menu/2')}}">Lihat Menu</a>
         </div>
     </div>
     <!-- /.row -->
@@ -136,8 +135,9 @@
         <div class="col-md-5">
             <h3>AYAM GEPREK</h3>
             <h7>Jl. Dharmawangsa No.115<br>Kertajaya, Gubeng<br>Surabaya<br></h7>
-            <h8 style="font-weight: bold">Buka Pukul 11.00 - 22.00</h8><br><br>
-            <a class="btn btn-primary" href="{{url('/menu/3')}}">Lihat Menu</a>
+            <h8 style="font-weight: bold">Buka Pukul 11.00 - 22.00</h8><br>
+            <h8 style="font-weight: bold; color: red">Tutup!</h8><br><br>
+            <a class="btn btn-danger" href="#">Lihat Menu</a>
         </div>
     </div>
     <!-- /.row -->

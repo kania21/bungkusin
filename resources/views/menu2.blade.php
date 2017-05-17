@@ -72,13 +72,12 @@
         <h2 id="totalsemua">Total Pembayaran : 0</h2>
 
         <div class="row">
-            <div c
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolramah1_13000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title"><a href="#">Ramah 1</a></h4>
-                        <h2 data-price='13000' id="price1">Rp . 13.000</h2>
+                        <h2 data-price='13000' id="price1">Rp 13.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="1">-</a>
                         <input type="text" value="0" name="jumlah[]" class="jumlah text-center" id="jumlah1" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="1">+</a>
@@ -90,7 +89,7 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolramah2_13000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title"><a href="#">Ramah 2</a></h4>
-                        <h2 data-price='13000' id="price2">Rp . 13.000</h2>
+                        <h2 data-price='13000' id="price2">Rp 13.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="2">-</a>
                         <input type="text" value="0" class="jumlah text-center" id="jumlah2" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="2">+</a>
@@ -102,16 +101,9 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolgilaaja_13000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title" ><a href="#">Gila Aja</a></h4>
-                        <h2 data-price='13000' id="price3">Rp . 13.000</h2>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <a class="btn btn-primary kurang total" href="#" data-id="3">-</a>
-                            </div>
-                            <div class="col-sm-4">
+                        <h2 data-price='13000' id="price3">Rp 13.000</h2>
+                        <a class="btn btn-primary kurang total" href="#" data-id="3">-</a>
                                 <input type="text" value="0" class="jumlah text-center" id="jumlah3" disabled>
-
-                            </div>
-                            <div class="col-sm-4">
                                 <a class="btn btn-primary tambah total" href="#" data-id="3">+</a>
                             
                             </div>
@@ -126,7 +118,7 @@
                     <a href="#"><img class="card-img-top img-fluid" style="width:400px;height:260px;" src="{{url('/img/pentolgilabanget_14000.jpg')}}" alt=""></a>
                     <div class="card-block">
                         <h4 class="card-title"><a href="#">Gila Banget</a></h4>
-                        <h2 data-price='14000' id="price4">Rp . 14.000</h2>
+                        <h2 data-price='14000' id="price4">Rp 14.000</h2>
                         <a class="btn btn-primary kurang total" href="#" data-id="4">-</a>
                         <input type="text" value="0" class="jumlah text-center" id="jumlah4" disabled>
                         <a class="btn btn-primary tambah total" href="#" data-id="4">+</a>
@@ -143,7 +135,7 @@
 
         <div class="container">
             <div class="col-12 text-center">
-                <a type="button" class="btn btn-success" href="{{url('/hasil')}}">PESAN</a>
+                <a class="btn btn-success" style="background-color: #025aa5" href="{{url('/hasil')}}">PESAN</a>
             </div>
         </div>
 

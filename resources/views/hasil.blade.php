@@ -70,7 +70,7 @@
         <table class="table table-hover table-bordered">
             <thead>
                 <tr>
-                    <th colspan="2">Detail Pemesanan</th>
+                    <th colspan="2"><h4><b>Detail Pemesanan</b></h4></th>
                     <!-- <th>Nama</th>
                     <th>Harga/Pcs</th>
                     <th>Qty </th>
