@@ -28,6 +28,10 @@ route:: get('/topup','UserController@topup');
 route:: get('/transfer','UserController@transfer');
 route:: get('/pulsa','UserController@pulsa');
 
+route:: get('/withdraw','UserController@withdraw');
+route:: get('/withdrawget','UserController@withdrawget');
+
+
 route::post('/updatemenu', "MenuController@updatemenu");
 
 Auth::routes();

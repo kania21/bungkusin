@@ -65,23 +65,28 @@
     <div class="container">
     <div class="span12">
     <div>
-        <hr class="soften"/>    
+        <hr class="soften"/> 
+
         <div class="table-responsive">
+        @if (session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+@endif
             <table class="table table-bordered table-condensed ">
                 
                 <tbody>
                     <tr>
                         <td colspan="2"><center>Transfer : <h1 id="saldo">{{$isi}}</h1>
-                         <p style="color:red;font-size:13px;font-style:italic;">*Perhatikan 3 digit terakhir</p>   
-                         Sebelum <b><h5>Selasa, 9 Mei 2017<br>Pukul 11.00</b></h5></td></center>
+                         </td></center>
                     </tr>
                     <tr>
                         <td>
                             <div class="row">
-                                <div class="col s6" style="text-align: center">
+                                <div class="col-md-6" style="text-align: center">
                                     <input type="radio" name="gender" value="male"><img src="{{url('temp/mandiri.png')}}" style="width:150px;height:75px">
                                 </div>
-                                <div class="col s6">
+                                <div class="col-md-6">
                                      MANDIRI<br>
                                         721-213-230<br>
                                         a.n PT Bungkusin
@@ -92,10 +97,10 @@
                    <tr>
                         <td>
                             <div class="row">
-                                <div class="col s6" style="text-align: center">
+                                <div class="col-md-6" style="text-align: center">
                                     <input type="radio" name="gender" value="male"><img src="{{url('temp/bca.png')}}" style="width:150px;height:75px">
                                 </div>
-                                <div class="col s6">
+                                <div class="col-md-6">
                                      BCA<br>
                                         721-213-230<br>
                                         a.n PT Bungkusin
@@ -106,19 +111,41 @@
                     <tr>
                         <td>
                             <div class="row">
-                                <div class="col s6" style="text-align: center">
+                                <div class="col-md-6" style="text-align: center">
                                     <input type="radio" name="gender" value="male"> <img src="{{url('temp/bni.png')}}" style="width:150px;height:70px">
                                 </div>
-                                <div class="col s6">
+                                <div class="col-md-6">
                                      BNI<br>
                                         721-213-230<br>
                                         a.n PT Bungkusin
+                                
                                 </div>
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
+            <center>
+                <form class="form-horizontal" action="{{url('/withdrawget')}}" method="get">
+                  <div class="form-group">
+                    <label class="control-label col-sm-5" for="email">No. Rekening:</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="email" placeholder="No. Rekening">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-5" for="pwd">Nama Pemilik Rekening:</label>
+                    <div class="col-sm-5"> 
+                      <input type="text" class="form-control" id="pwd" placeholder="Nama">
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                    <div class="col-sm-offset-2 col-sm-5">
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                  </div>
+                </form>
+                </center>
             <br>
 
         <div class="col s12" style="text-align: right">
@@ -142,7 +169,7 @@
         var rupiah = '';        
         var angkarev = angka.toString().split('').reverse().join('');
         for(var i = 0; i < angkarev.length; i++) if(i%3 == 0) rupiah += angkarev.substr(i,3)+'.';
-        return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
+        return 'Rp '+rupiah.split('',rupiah.length-1).reverse().join('');
     }
 
     $('#saldo').html(convertToRupiah($('#saldo').html()));

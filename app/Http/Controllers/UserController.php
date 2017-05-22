@@ -53,4 +53,15 @@ class UserController extends Controller
 
     	return view('pulsa', $this->data);
     }
+
+    public function withdraw(Request $request)
+    {
+        $this->data['isi']=20000000;
+        return view('withdraw', $this->data);
+    }
+    public function withdrawget(Request $request)
+    {
+        $this->data['isi']=20000000;
+        return redirect('/withdraw')->with('status', 'Mohon Tunggu, dana akan segera dikirim ke rekening anda. Terima Kasih');
+    }
 }
