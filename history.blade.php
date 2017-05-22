@@ -203,7 +203,7 @@
                                                     <a href="#" class="pull-left">
                                                         <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/1.jpg')}}" style="width:220px;height:130px;" alt="">
                                                     </a>
-                                                    <div class="col-md-2">
+                                                    <div class="col-md-2" style="padding:2%;">
                                                         <span class="media-meta pull-right">2 April 2017</span>
                                                         <h4 class="title">Sego Njamoer
                                                             <span class="pull-right proses">(Dalam Proses)</span>
