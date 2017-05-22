@@ -124,6 +124,22 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="password-confirm" class="col-md-4 control-label"></label>
+
+                            <div class="col-md-6">
+                                <div class="radio">
+                                  <label><input type="radio" name="optradio">Merchant</label>
+
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="optradio">Customer</label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

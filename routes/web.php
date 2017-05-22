@@ -30,6 +30,7 @@ route:: get('/pulsa','UserController@pulsa');
 
 route:: get('/withdraw','UserController@withdraw');
 route:: get('/withdrawget','UserController@withdrawget');
+route:: get('/daftar','UserController@daftar');
 
 
 route::post('/updatemenu', "MenuController@updatemenu");
