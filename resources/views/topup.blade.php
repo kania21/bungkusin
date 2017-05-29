@@ -70,7 +70,7 @@
                 
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color:    #f0ad4e"><center>BungPay : <b><h1 id="saldo">{{$user->bungpay}}</h1></b></center></td>
+                        <td colspan="2" style="background-color:    #f0ad4e"><center>BungPay : <b><h1>Rp 29.000</h1></b></center></td>
                     </tr>
                     <tr>
                         <td align="center">
@@ -82,9 +82,9 @@
                               <br>
                                 <label>Pilih Nominal</label><br>
                                 <form class="form-group" method="get" action="{{url('transfer')}}">
-                                  <label class="radio-inline"><input type="radio" name="gender" value="10000" checked> Rp 10.000</label><br>
-                                  <label class="radio-inline"><input type="radio" name="gender" value="25000"> Rp 25.000</label><br>
-                                  <label class="radio-inline"><input type="radio" name="gender" value="50000"> Rp 50.000</label><br><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="50000" checked> Rp 50.000</label><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="100000"> Rp 100.000</label><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="300000"> Rp 300.000</label><br><br>
                                   <input class="btn btn-primary" type="submit" value="Pilih">
                                 </form>                             
                               </div>
@@ -101,9 +101,9 @@
                               <br>
                                 <label>Pilih Nominal</label><br>
                                 <form class="form-group" method="get" action="{{url('pulsa')}}">
-                                  <label class="radio-inline"><input type="radio" name="gender" value="10000" checked> Rp 10.000</label><br>
-                                  <label class="radio-inline"><input type="radio" name="gender" value="25000"> Rp 25.000</label><br>
-                                  <label class="radio-inline"><input type="radio" name="gender" value="50000"> Rp 50.000</label><br><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="50000" checked> Rp 50.000</label><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="100000"> Rp 100.000</label><br>
+                                  <label class="radio-inline"><input type="radio" name="gender" value="300000"> Rp 300.000</label><br><br>
                                   <input class="btn btn-primary" type="submit" value="Pilih">
                                 </form>                             
                               </div>
@@ -125,21 +125,21 @@
                                             <th>Topup/Pakai</th>
                                             <th>Jumlah</th>
                                           </thead>
-                                          @foreach($topup as $value)
                                           <tr>
-                                            <td>{{$value->waktu}}</td>
-                                            <td>
-                                                @if($value->jenis=='Topup')
-                                                    <p style="color:#5cb85c">Topup</p>
-                                                @else
-                                                    <p style="color:#d9534f">Pakai</p>
-                                                @endif
-
-                                            </td>
-                                            <td>{{$value->jumlah}}</td>
+                                            <td>15 April 2017</td>
+                                            <td><p style="color:#5cb85c">Topup</p></td>
+                                            <td>50.000</td>
                                           </tr>
-                                          @endforeach
-                                          
+                                          <tr>
+                                            <td>13 April 2017</td>
+                                            <td><p style="color:#d9534f">Pakai</p></td>
+                                            <td>100.000</td>
+                                          </tr>
+                                          <tr>
+                                            <td>1 April 2017</td>
+                                            <td><p style="color:#5cb85c">Topup</p></td>
+                                            <td>50.000</td>
+                                          </tr>
                                       </table>
                                     </div> 
                               </div>
@@ -208,17 +208,6 @@
 <script src="temp/vendor/jquery/jquery.min.js"></script>
 <script src="temp/vendor/tether/tether.min.js"></script>
 <script src="temp/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    function convertToRupiah(angka)
-    {
-        var rupiah = '';        
-        var angkarev = angka.toString().split('').reverse().join('');
-        for(var i = 0; i < angkarev.length; i++) if(i%3 == 0) rupiah += angkarev.substr(i,3)+'.';
-        return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
-    }
-
-    $('#saldo').html(convertToRupiah($('#saldo').html()));
-</script>
 
 </body>
 </html>
