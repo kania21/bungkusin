@@ -9,12 +9,9 @@
     <meta name="author" content="">
 
     <title>BUNGKUS.IN</title>
-    <link rel="shortcut icon" href="{{url('temp/nasi.png')}}">
-
 
     <!-- Bootstrap core CSS -->
     <link href="temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 
     <!-- Custom styles for this template -->
     <link href="temp/css/1-col-portfolio.css" rel="stylesheet">
@@ -150,11 +147,13 @@
                 <div class="collapse navbar-collapse" id="navbarExample">
 
                     <ul class="navbar-nav ml-auto">
-                        
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{url('/history')}}">History Pesanan</a>
+                            <a class="nav-link" href="#">Welcome! <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{url('/topup')}}">Rp 50.000</a>
                         </li>
                     <!-- <li class="nav-item">
@@ -171,15 +170,11 @@
     <br>
 
     <div class="container">
-        <div class="row">
-
-            <section class="content">
-                <h1>History Pemesanan</h1><br>
-                <div class="col-md-12 col-md-offset-2">
+        <h1>History Pemesanan</h1><br>
+            <div class="col-md-12 col-md-offset-2">
                     <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="pull-right" style="text-align:center">
-                                <div class="btn-toolbar"  aria-label="Filter by">
+                            <div class="row">
+                                <div class="btn-group">
                                     <button type="button" class="btn btn-warning btn-filter" data-target="proses">Dalam Proses</button>
                                     <button type="button" class="btn btn-success btn-filter" data-target="selesai">Sudah Selesai</button>
                                     <button type="button" class="btn btn-danger btn-filter" data-target="batal">Dibatalkan</button>
@@ -195,7 +190,7 @@
                                                     <a href="#" class="pull-left">
                                                         <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/2.jpg')}}" style="width:220px;height:130px;">
                                                     </a>
-                                                    <div class="media-body" style="padding:2%;">
+                                                    <div class="media-body">
                                                         <span class="media-meta pull-right">8 April 2017</span>
                                                         <h3 class="title">
                                                             Pentol Gilaaa
@@ -214,7 +209,7 @@
                                                 <a href="#" class="pull-left">
                                                 <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/3.jpg')}}" style="width:220px;height:130px;"">
                                                 </a>
-                                                <div class="media-body" style="padding:2%;">
+                                                <div class="media-body">
                                                     <span class="media-meta pull-right">2 April 2017</span>
                                                     <h4 class="title">
                                                         Ayam Geprek
@@ -250,7 +245,7 @@
                                                 <a href="#" class="pull-left">
                                                     <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/2.jpg')}}" style="width:220px;height:130px;"">
                                                 </a>
-                                                <div class="media-body" style="padding:2%;">
+                                                <div class="media-body">
                                                     <span class="media-meta pull-right">27 Maret 2017</span>
                                                     <h4 class="title">
                                                         Pentol Gilaaa
@@ -268,7 +263,7 @@
                                                 <a href="#" class="pull-left">
                                                     <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/1.jpg')}}" style="width:220px;height:130px;"">
                                                 </a>
-                                                <div class="media-body" style="padding:2%;">
+                                                <div class="media-body">
                                                     <span class="media-meta pull-right">25 Maret 2017</span>
                                                     <h3 class="title">
                                                         Sego Njamoer
