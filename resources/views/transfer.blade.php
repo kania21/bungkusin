@@ -51,7 +51,7 @@
                         <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rp 5.000.000</a>
+                        <a class="nav-link" href="#">BungPay : Rp 28.000</a>
                     </li>
                    <!--  <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -71,7 +71,7 @@
                 
                 <tbody>
                     <tr>
-                        <td colspan="2"><center>Transfer : <h1 id="saldo">{{$isi}}</h1>
+                        <td colspan="2"><center>Transfer : <h1>Rp 100.<b>012</b></h1>
                          <p style="color:red;font-size:13px;font-style:italic;">*Perhatikan 3 digit terakhir</p>   
                          Sebelum <b><h5>Selasa, 9 Mei 2017<br>Pukul 11.00</b></h5></td></center>
                     </tr>
@@ -79,7 +79,7 @@
                         <td>
                             <div class="row">
                                 <div class="col s6" style="text-align: center">
-                                    <input type="radio" name="gender" value="male"><img src="{{url('temp/mandiri.png')}}" style="width:150px;height:75px">
+                                    <img src="{{url('temp/mandiri.png')}}" style="width:150px;height:75px">
                                 </div>
                                 <div class="col s6">
                                      MANDIRI<br>
@@ -93,7 +93,7 @@
                         <td>
                             <div class="row">
                                 <div class="col s6" style="text-align: center">
-                                    <input type="radio" name="gender" value="male"><img src="{{url('temp/bca.png')}}" style="width:150px;height:75px">
+                                    <img src="{{url('temp/bca.png')}}" style="width:150px;height:75px">
                                 </div>
                                 <div class="col s6">
                                      BCA<br>
@@ -107,7 +107,7 @@
                         <td>
                             <div class="row">
                                 <div class="col s6" style="text-align: center">
-                                    <input type="radio" name="gender" value="male"> <img src="{{url('temp/bni.png')}}" style="width:150px;height:70px">
+                                    <img src="{{url('temp/bni.png')}}" style="width:150px;height:70px">
                                 </div>
                                 <div class="col s6">
                                      BNI<br>
@@ -136,17 +136,6 @@
 <script src="temp/vendor/jquery/jquery.min.js"></script>
 <script src="temp/vendor/tether/tether.min.js"></script>
 <script src="temp/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    function convertToRupiah(angka)
-    {
-        var rupiah = '';        
-        var angkarev = angka.toString().split('').reverse().join('');
-        for(var i = 0; i < angkarev.length; i++) if(i%3 == 0) rupiah += angkarev.substr(i,3)+'.';
-        return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
-    }
-
-    $('#saldo').html(convertToRupiah($('#saldo').html()));
-</script>
 
 </body>
 </html>
