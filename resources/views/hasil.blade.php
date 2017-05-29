@@ -51,7 +51,7 @@
                         <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" id="saldolama1">{{$saldolama}}</a>
+                        <a class="nav-link" href="#">BungPay : Rp 28.000</a>
                     </li>
                    <!--  <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -78,24 +78,28 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach($transaksi->order as $value)
                 <tr>
-                    <td><img width="50" src="{{url('/img/'.$value->menu->foto)}}" alt="">
-                    {{$value->menu->nama_menu}}<br><br>
+                    <td><img width="50" src="{{url('/img/sate_12000.jpg')}}" alt="">
+                    Sate Njamoer<br><br>
                     </td>
                     
-                    <td><div class="harga">{{$value->menu->harga}}</div></td>
+                    <td>Rp 12.000</td>
                     
                 </tr>
-            @endforeach
-                
+                <tr>
+                    <td>
+                <img width="50" src="{{url('/img/somay_11000.jpg')}}" alt="">
+                    Pentol Njamoer<br>
+                    </td>
+                    <td>Rp 16.000</td>
+                </tr>
                  <tr>
                     <td>Total <br> </td>
-                    <td><div id="total">{{$total}}</div></td><br>
+                    <td>Rp 28.000</td><br>
                  </tr> 
                  <tr style="background-color: #f0ad4e ">
                     <td>BungPay <br> </td>
-                    <td id="saldolama3">{{$saldolama}}</td><br>
+                    <td>Rp 50.000</td><br>
                  </tr>   
                  <tr>
                  <td>Sisa Saldo: </td>
@@ -112,8 +116,8 @@
                         
                     <span class="outer">
 
-                        <span class="inner"><div id="saldolama2">{{$saldolama}}</div></span>
-                    </span><br><div id="saldosisa">{{$saldo}}</div></td>
+                        <span class="inner">Rp 28.000</span>
+                    </span><br> Rp 22.000</td>
                 </tr>
                 <!-- <tr>
                     <td></td>
@@ -128,9 +132,8 @@
                 </tr>
                 -->
             </tbody>
-        </table><br/><form action="proses" method="get">
-        <input type="hidden" name="id" value="{{$transaksi->id_transaksi}}">
-        <button type="submit" class="btn btn-primary navbar-toggler-right"> Konfirmasi Pesanan </button></form>
+        </table><br/>
+        <a href="{{url('/proses')}}" class="btn btn-primary navbar-toggler-right"> Konfirmasi Pesanan </a>
     </div>
     </div>
     </div>
@@ -141,32 +144,6 @@
 <script src="temp/vendor/jquery/jquery.min.js"></script>
 <script src="temp/vendor/tether/tether.min.js"></script>
 <script src="temp/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-    function convertToRupiah(angka)
-    {
-        var rupiah = '';        
-        var angkarev = angka.toString().split('').reverse().join('');
-        for(var i = 0; i < angkarev.length; i++) if(i%3 == 0) rupiah += angkarev.substr(i,3)+'.';
-        return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
-    }
-
-    jumlah=0;
-    // $('.harga').each(function(i){
-    //     // alert($(this).html());
-    //     jumlah=jumlah+parseInt($(this).html());
-    // });
-    $('.harga').each(function(i){
-        // alert($(this).html());
-        $(this).html(convertToRupiah($(this).html()))
-    });
-    $('#total').html(convertToRupiah($('#total').html()));
-    $('#saldolama1').html(convertToRupiah($('#saldolama1').html()));
-    $('#saldolama2').html(convertToRupiah($('#saldolama2').html()));
-    $('#saldolama3').html(convertToRupiah($('#saldolama3').html()));
-    $('#saldosisa').html(convertToRupiah($('#saldosisa').html()));
-
-</script>
 
 </body>
 </html>

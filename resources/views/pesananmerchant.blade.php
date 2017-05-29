@@ -172,12 +172,19 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="container">
-            <img src="{{url('temp/logo6.png')}}" alt="BUNGKUS.IN">
+           <a href="{{url('/dashmerch')}}">
+            <img src="{{url('temp/logo6.png')}}" href="{{url('/dashmerch')}}" alt="BUNGKUS.IN">
             <div class="collapse navbar-collapse" id="navbarExample">
 
                 <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                            <a class="nav-link" href="#">Welcome, Tiara! <span class="sr-only">(current)</span></a>
+                        </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="{{url('/tambahmenu')}}">Tambah Menu <span class="sr-only">(current)</span></a>
+                    </li>   
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{url('/addmenu')}}">Edit Menu <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{url('/dashmerch')}}">Edit Menu <span class="sr-only">(current)</span></a>
                     </li>
                  <!--    <li class="nav-item">
                         <a class="nav-link" href="#">About</a>

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Merchant;
-use Illuminate\Support\Facades\Auth;
 
 class MerchantController extends Controller
 {
@@ -14,16 +13,13 @@ class MerchantController extends Controller
     	return view('signup');
     }
     public function bungkus(){
-        if(Auth::user()->merchant) return redirect('/addmenu');
-        // if(0) echo "a";
     	return view('test');
     }
     public function form(){
     	return view('formsignup');
     }
-    public function proses(Request $request){
-        $this->data["id_transaksi"]=$request->id;
-        return view('pesanan', $this->data);
+    public function proses(){
+        return view('pesanan');
     }
     public function history(){
         return view('historay');
@@ -39,5 +35,11 @@ class MerchantController extends Controller
     }
      public function merchantmenu(){
         return view('menubaru');
+    }
+    public function dashmerch(){
+        return view('dashmerch');
+    }
+    public function tambahmenu(){
+        return view('tambahmenu');
     }
 }

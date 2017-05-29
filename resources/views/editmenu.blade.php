@@ -41,24 +41,25 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
+         <a href="{{url('/dashmerch')}}">
             <img src="{{url('temp/logo6.png')}}" alt="BUNGKUS.IN">
-            <!-- <div class="collapse navbar-collapse" id="navbarExample">
+             <div class="collapse navbar-collapse" id="navbarExample">
 
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Welcome, Tiara! <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url('/merchant')}}">Daftar Pesanan</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url('/tambahmenu')}}">Tambah Menu</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url('/dashmerch')}}">Edit Menu</a>
+                        </li>
                 </ul>
-            </div> -->
+            </div> 
         </div>
     </nav>
     <br>
@@ -70,47 +71,47 @@
             </div>
         </div>
         <hr>
-      <form class="form-horizontal" action="{{url('/updatemenu')}}" method="post" enctype="multipart/form-data">   
+      <form class="form-control">   
         <div class="container">
             <div class="clearfix">
-            {{ csrf_field() }}
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-             <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label><b>Foto</b></label>
+                    </div> 
+                    <div>
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                    </div>
+                </div><br>
                 <hr><br>
-                
-                    <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
                         <label><b>Nama Makanan</b></label>
                     </div> 
                     <div>
-                        <input class="form-control"  type="text" placeholder="ex: Sego Crispy" name="namamakanan" required><br>
+                        <input type="text" placeholder="ex: Sego Crispy" name="nama-makanan" required><br>
                     </div>
-                <br>
+                </div><br>
                 <hr><br>
-                
-                    <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
                         <label><b>Deskripsi Makanan</b></label>
                     </div> 
                     <div>
-                        <textarea class="form-control" rows="6" placeholder="Isi dengan deskripsi makanan seperti terbuat dari bahan apa,rasanya bagaimana,dll" name="deskripsi" required></textarea><br>
+                        <textarea class="form-control" rows="6" placeholder="Isi dengan deskripsi makanan seperti terbuat dari bahan apa,rasanya bagaimana,dll" name="nama-makanan" required></textarea><br>
                     </div>
-               <br>
+                </div><br>
                 <hr><br>
-                
-                    <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
                         <label><b>Harga</b></label>
                     </div> 
                     <div>
                         <input type="text" placeholder="ex: 7000" name="harga" required>
                     </div>
-                <br>
+                </div><br>
                 <hr><br>
-              <button type="submit" class="btn btn-primary"> Edit </button>
+              <a href="{{url('/dashmerch')}}" class="btn btn-primary"> Edit </a>
+              <a href="{{url('/dashmerch')}}" class="btn btn-danger"> Delete </a>
             </div>
     </form>
   </body>

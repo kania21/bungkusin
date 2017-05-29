@@ -190,7 +190,7 @@
                                                     <a href="#" class="pull-left">
                                                         <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/2.jpg')}}" style="width:220px;height:130px;">
                                                     </a>
-                                                    <div class="media-body">
+                                                    <div class="media-body" style="padding: 2%;">
                                                         <span class="media-meta pull-right">8 April 2017</span>
                                                         <h3 class="title">
                                                             Pentol Gilaaa
@@ -209,7 +209,7 @@
                                                 <a href="#" class="pull-left">
                                                 <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/3.jpg')}}" style="width:220px;height:130px;"">
                                                 </a>
-                                                <div class="media-body">
+                                                <div class="media-body"  style="padding: 2%;">
                                                     <span class="media-meta pull-right">2 April 2017</span>
                                                     <h4 class="title">
                                                         Ayam Geprek
@@ -227,7 +227,7 @@
                                                 <a href="#" class="pull-left">
                                                     <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/4.jpg')}}" style="width:220px;height:130px;"">
                                                 </a>
-                                                <div class="media-body">
+                                                <div class="media-body"  style="padding: 2%;">
                                                     <span class="media-meta pull-right">29 Maret 2017</span>
                                                     <h4 class="title">
                                                         Chicken Pok-Pok
@@ -245,7 +245,7 @@
                                                 <a href="#" class="pull-left">
                                                     <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/2.jpg')}}" style="width:220px;height:130px;"">
                                                 </a>
-                                                <div class="media-body">
+                                                <div class="media-body"  style="padding: 2%;">
                                                     <span class="media-meta pull-right">27 Maret 2017</span>
                                                     <h4 class="title">
                                                         Pentol Gilaaa
@@ -263,7 +263,7 @@
                                                 <a href="#" class="pull-left">
                                                     <img class="img-fluid rounded mb-3 mb-md-0" src="{{url('temp/1.jpg')}}" style="width:220px;height:130px;"">
                                                 </a>
-                                                <div class="media-body">
+                                                <div class="media-body"  style="padding: 2%;">
                                                     <span class="media-meta pull-right">25 Maret 2017</span>
                                                     <h3 class="title">
                                                         Sego Njamoer

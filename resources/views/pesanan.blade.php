@@ -53,7 +53,7 @@
                         <a class="nav-link" href="{{url('/history')}}">Pesanan</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Rp 28.000</a>
+                        <a class="nav-link" href="#">BungPay : Rp 28.000</a>
                     <li>
                 </ul>
             </div>
@@ -71,10 +71,14 @@
   <thead>
     <th><h4 style="text-align:center">NOMOR PESANAN</h4></th>
     </thead>
-   <td><h1><b>PS{{$id_transaksi}}</b></h1></td>
+   <td><h1><b>PS001</b></h1></td>
+   
+
    </table>
    <p style="color:red"><i>*Tukarkan nomor ini ke merchant untuk ambil pesanan</i></p>
+
   <h6 style="text-align:center"><a class="btn btn-primary" href="{{url('/bungkus')}}">Kembali ke Home</a></h6>
+  <a href="{{url('receipt.pdf')}}">Download Receipt</a>
  </div>
 </div>
 

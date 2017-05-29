@@ -3,57 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use App\Topup;
-use Auth;
-
 
 class UserController extends Controller
 {
     public function topup()
     {
-        $this->data['user'] = User::find(Auth::user()->id);
-        $this->data['topup'] = Topup::where('id', Auth::user()->id)->get();
-
-    	return view('topup', $this->data);
+    	return view('topup');
     }
     
-    public function transfer(Request $request)
+    public function transfer()
     {
-        $user = User::find(Auth::user()->id);
-        $user->bungpay = $user->bungpay + $request->gender;
-        $user->save();
-
-        $topup = New Topup;
-        $topup->jenis="Topup";
-        $topup->jumlah=$request->gender;
-        $topup->id=Auth::user()->id;
-        $topup->save();
-
-        $this->data['isi']=$request->gender+rand(5, 25);
-
-
-    	return view('transfer', $this->data);
+    	return view('transfer');
     }
 
-    public function pulsa(Request $request)
+    public function pulsa()
     {
-        $user = User::find(Auth::user()->id);
-        $user->bungpay = $user->bungpay + $request->gender;
-        $user->save();
-
-        $topup = New Topup;
-        $topup->jenis="Topup";
-        $topup->jumlah=$request->gender;
-        $topup->id=Auth::user()->id;
-        $topup->save();
-
-        $this->data['isi']=$request->gender+rand(5, 25);
-
-
-    	return view('pulsa', $this->data);
+    	return view('pulsa');
     }
-
     public function withdraw(Request $request)
     {
         $this->data['isi']=20000000;
@@ -65,8 +31,7 @@ class UserController extends Controller
         $this->data['isi']=20000000;
         return redirect('/withdraw')->with('status', 'Mohon Tunggu, dana akan segera dikirim ke rekening anda. Terima Kasih');
     }
-
-    public function daftar(Request $request)
+      public function daftar(Request $request)
     {
         
         return view('daftar', $this->data);
